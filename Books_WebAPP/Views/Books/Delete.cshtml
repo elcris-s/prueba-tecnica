@@ -1,0 +1,85 @@
+﻿@model Books_WebAPP.Models.Books
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<head>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<form method="post" asp-action="Delete_Method" asp-route-id=@Model.id asp-route-message="">
+
+    <div class="card container-fluid">
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="id" class="font-weight-bold"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.DisplayFor(x => x.id)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="title" class="font-weight-bold"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.DisplayFor(x => x.title)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="description" class="font-weight-bold"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.DisplayFor(x => x.description)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="pageCount" class="font-weight-bold"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.DisplayFor(x => x.pageCount)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="excerpt" class="font-weight-bold"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.DisplayFor(x => x.excerpt)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="publishDate" class="font-weight-bold"></label>
+                    </div>
+                    <div class="col-8">
+                        @Html.DisplayFor(x => x.publishDate)
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+                        <div class="col">
+                            <input type="submit" class="btn btn-danger" value="Eliminar" />
+                        </div>
+                        <div class="col">
+                            <a asp-action="Index" class="btn btn-dark">Regresar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+        <p class="text-danger text-center font-weight-bold">@ViewBag.ErrorMessage</p>
+    </div>
+</form>

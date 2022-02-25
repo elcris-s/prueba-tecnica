@@ -1,0 +1,70 @@
+﻿@model List<Books_WebAPP.Models.Books>
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.10.25/r-2.2.9/datatables.min.css" />
+</head>
+
+<h2 class="text-center">Listado de Libros</h2>
+
+<div class="container-fluid">
+    <div class="text-center">
+        <a class="btn btn-dark" asp-controller="Books" asp-action="Create">
+            Crear nuevo libro
+        </a>
+    </div>
+    <table class="table table-bordered" id="books_table">
+        <thead class="text-center text-capitalize">
+            <tr>
+                <th>Id</th>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Cantidad de paginas</th>
+                <th>Resumen</th>
+                <th>Fecha de publicacion</th>
+                <th>Accesos</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+            <tr>
+                <td>@book.id</td>
+                <td>@book.title</td>
+                <td>@book.description</td>
+                <td>@book.pageCount</td>
+                <td>@book.excerpt</td>
+                <td>@book.publishDate</td>
+                <td>
+                    <a class="btn btn-outline-dark" asp-controller="Books" asp-action="Edit" asp-route-id=@book.id>
+                        Editar
+                    </a>
+                    <a class="btn btn-outline-dark" asp-controller="Books" asp-action="Details" asp-route-id=@book.id>
+                        Detalles
+                    </a>
+                    <a class="btn btn-outline-danger" asp-controller="Books" asp-action="Delete" asp-route-id=@book.id>
+                        Eliminar
+                    </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section scripts
+    {
+    <script>
+            $(document).ready(function () {
+                $('#books_table').DataTable({
+                    
+                });
+            });
+    </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/r-2.2.9/datatables.min.js"></script>
+
+}
+
