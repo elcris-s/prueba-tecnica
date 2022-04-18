@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+C2K+2XDTRGKVG2g9rPJg8TF4b9a/H5a8IGziH2n/WaALfW4xYgd3EXA3iQP0BWTl24c9uKsrLUEsCb5iom9kA==",
+  "dgSpecHash": "i4IbNpEJa6qT8uQW0XF43e4m/+Aam34Wuxa0xQPRbHf8WWvNcwG8ieyEg1u6v8qoOOVXVVEaXBHTX8L28OMrsA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\Books_WebAPP\\Books_WebAPP.csproj",
+  "projectFilePath": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\prueba-tecnica\\Books_WebAPP\\Books_WebAPP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crist\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\crist\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

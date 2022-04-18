@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\Books_WebAPP\\Books_WebAPP.csproj": {}
+    "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\prueba-tecnica\\Books_WebAPP\\Books_WebAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\Books_WebAPP\\Books_WebAPP.csproj": {
+    "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\prueba-tecnica\\Books_WebAPP\\Books_WebAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\Books_WebAPP\\Books_WebAPP.csproj",
+        "projectUniqueName": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\prueba-tecnica\\Books_WebAPP\\Books_WebAPP.csproj",
         "projectName": "Books_WebAPP",
-        "projectPath": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\Books_WebAPP\\Books_WebAPP.csproj",
+        "projectPath": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\prueba-tecnica\\Books_WebAPP\\Books_WebAPP.csproj",
         "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\Books_WebAPP\\obj\\",
+        "outputPath": "C:\\Users\\crist\\Desktop\\Code\\Prueba Claro\\prueba-tecnica\\Books_WebAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config",

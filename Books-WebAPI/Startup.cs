@@ -1,3 +1,4 @@
+using Books_WebAPI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +11,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Books_WebAPI
@@ -36,6 +38,7 @@ namespace Books_WebAPI
             {
                 options.BaseAddress = new Uri(Configuration.GetValue<string>("ApiURL"));
             });
+            services.AddScoped<IBook, BooksService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
